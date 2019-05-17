@@ -10,7 +10,7 @@ script:
 
 after_success:
     - docker build -t tshupaka/multi-client ./client
-    - docker built -t tshupaka/multi-nginx ./nginx
+    - docker build -t tshupaka/multi-nginx ./nginx
     - docker build -t tshupaka/multi-server ./server
     - docker build -t tshupaka/multi-worker ./worker
 
